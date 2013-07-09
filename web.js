@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   if (err) throw err;
   console.log(data);
 });
-  var retstr = buf.toString('utf8');
+  var retstr = buf.toString('ascii');
   response.send(retstr);
 });
 
